@@ -1,0 +1,16 @@
+class AdventurePark
+{
+	public static void main(String[] args)
+	{
+		int animals = 5000;
+		int birds = 3000;
+		int trees = 15000;
+		int visitors = 2000;
+		int adventureActivity = 50;
+		System.out.println("animals : "+animals);
+		System.out.println("birds : "+birds);
+		System.out.println("trees : "+trees);
+		System.out.println("visitors : "+visitors);
+		System.out.println("adventureActivity : "+adventureActivity);
+	}
+}
