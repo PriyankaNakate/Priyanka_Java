@@ -19,11 +19,14 @@ class OperationSwitch
 			case '*' : output = num1*num2;break;
 			case '/' : output = num1/num2;break;
 			case '%' : output = num1%num2;break; 
-			default : System.out.println("Invalid Operator");flag=false;
+			default : System.out.println("Invalid Operator"); //flag=false;
 		}
 		// if(flag){
 		// 	System.out.println(num1+" "+op+" "+num2+" = "+output);
 		// }
-		if()
+		if(op=='+'||op=='-'||op=='*'||op=='/'||op=='%')
+		{
+			System.out.println(num1+" "+op+" "+num2+" = "+output);
+		}
 	}
 }
