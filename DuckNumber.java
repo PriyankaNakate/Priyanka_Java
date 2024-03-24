@@ -6,7 +6,7 @@ class DuckNumber
 		System.out.print("Enter a number : ");
 		int num = sc.nextInt();
 		int dup = num;
-		int count=0;
+		int count = 0;
 		while(num>0)
 		{
 			int rem = num%10;
