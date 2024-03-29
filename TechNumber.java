@@ -8,6 +8,7 @@ class TechNumber
 		System.out.print("Enter a number : ");
 		int num = sc.nextInt();
 		int dup = num;
+		int dup1 = num;
 		int len = 0;
 		int firstPart = 0;
 		int secPart = 0;
@@ -19,6 +20,12 @@ class TechNumber
 		System.out.println("length of number : "+len);
 		if(len%2==0)
 		{
+			int div=1;
+			while(len!=0)
+			{
+				div*=10;
+				len/=10;
+			}
 			firstPart = dup/100;
 			System.out.print(firstPart+" ");
 			secPart = dup%100;
