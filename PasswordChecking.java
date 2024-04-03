@@ -4,6 +4,7 @@ class PasswordChecking
 	public static void main(String[] args) throws InterruptedException{
 		Scanner sc = new Scanner(System.in);
 		int attempt = 1;
+		outerloop:
 		for(; ;)
 		{
 			int storedPin = 8668;
@@ -14,7 +15,7 @@ class PasswordChecking
 				if(userPin==storedPin)
 				{
 					System.out.println("Login Suceesfully");
-					break;
+					break outerloop;
 				}
 				else
 				{
