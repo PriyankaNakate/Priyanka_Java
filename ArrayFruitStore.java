@@ -10,6 +10,7 @@ class ArrayFruitStore
 		{
 			fruits[i] = sc.next();
 		}
+		System.out.println("fruits are stored successfully in array");
 	}
 
 	public void displayFruits(){
@@ -20,16 +21,22 @@ class ArrayFruitStore
 	public void changeFruit(){
 		System.out.print("Enter fruit for matches : ");
 		String inputFruit = sc.next();
+		int frtCnt = 0;
 		for(int i=0;i<fruits.length;i++)
 		{
 			if(inputFruit.equals(fruits[i]))
 			{
-				System.out.println("Matches");
+				System.out.println("Fruit Matches");
 				System.out.print("Enter new fruit for update : ");
 				String newFruit = sc.next();
 				fruits[i] = newFruit;
+				frtCnt++;
+				System.out.println("fruits are updated");
 				break;
 			}
+		}
+		if(frtCnt==0){
+			System.out.println("Fruit not present in array so we cannot replace it");
 		}
 	}
 
@@ -43,7 +50,9 @@ class ArrayFruitStore
 				System.out.print("Enter an array size : ");
 				int size = sc.nextInt();
 				String fruits[] = new String[size];
-				for( ; ;){
+				features : 
+				for(;;){
+					System.out.println();
 					System.out.println("***Operations on Array(fruits)***");
 				System.out.println("1.Store fruits");
 				System.out.println("2.Display fruits");
@@ -54,12 +63,14 @@ class ArrayFruitStore
 				switch(operation)
 				{
 					case 1 : {
-						System.out.print("store fruits");
+						System.out.println();
+						System.out.println("***store fruits***");
 						obj.storeFruits(fruits);
 						break;
 					}
 					case 2 : {
-						System.out.print("display fruits");
+						System.out.println();
+						System.out.println("***display fruits***");
 						if(obj.fruits==null)
 						{
 							System.out.println("first store the fruits for display");
@@ -70,7 +81,8 @@ class ArrayFruitStore
 						break;
 					}
 					case 3 : {
-						System.out.print("update fruits");
+						System.out.println();
+						System.out.println("***update fruits***");
 						if(obj.fruits==null)
 						{
 							System.out.println("first store the fruits for update");
@@ -81,13 +93,14 @@ class ArrayFruitStore
 						break;
 					}
 					case 4 : {
+						System.out.println("***Exit successfully***");
 						System.exit(0);
 					}
 
 					default : System.out.println("Invalid option");
 				}
 				}
-				break;
+				//break;
 			}
 			case 2 : {
 				System.exit(0);
