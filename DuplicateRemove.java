@@ -16,7 +16,7 @@ class DuplicateRemove
 		}
 		System.out.println(cnt);
 
-		// int newArr [] = new int[a.length-cnt];
+		// int newArr [] = new int[a.length-cnt];                                               
 		// int index = 0;
 		// for(int i=0;i<a.length;i++)
 		// {
